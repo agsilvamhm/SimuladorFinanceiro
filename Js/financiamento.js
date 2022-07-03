@@ -1,3 +1,4 @@
+'use strict'
 import {Parcela} from './parcela.js';
 
 export class Financiamento{
@@ -40,5 +41,9 @@ export class Financiamento{
                 celula.textContent = dado;
             }
         }
+    }
+
+    getParcelas(){
+        return this.#parcelas;
     }
 }
