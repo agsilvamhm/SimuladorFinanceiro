@@ -10,17 +10,24 @@
 <body>
     <header><h2>Simulador de financiamento com sistema de amortização constante (SAC)</h2></header>
     <main>
-        <input id="textoValor" type="text" placeholder="Valor do bem"><br>
-        <input id="textoEntrada" type="text" placeholder="Valor da entrada"><br>
-        <input id="textoTaxaJuros" type="text" placeholder="Taxa de juros (%)"><br>
-        <input id="textoPrazo" type="text" placeholder="Prazo (em meses)"><br>
-        <button id="botaoCalcular">Calcular</button>
-        <input id="comCarencia" type="checkbox">Com carência?
-        <select id="listaSuspensa" hidden>
-            <option value="2">2 meses</option>
-            <option value="3">3 meses</option>
-            <option value="4">4 meses</option>
-        </select>
+        <form>
+            <label for="textoValor">Valor do bem ---:</label> 
+            <input id="textoValor" type="text" placeholder="Valor do bem"><br>
+            <label for="textoEntrada">Valor da entrada:</label>
+            <input id="textoEntrada" type="text" placeholder="Valor da entrada"><br>
+            <label for="textTaxaJuros">Taxa de Juros --:</label>
+            <input id="textoTaxaJuros" type="text" placeholder="Taxa de juros (%)"><br>
+            <label for="textoPrazo">Prazo ------------:</label>
+            <input id="textoPrazo" type="text" placeholder="Prazo (em meses)"><br>
+            <p></p>
+            <button id="botaoCalcular">Calcular</button>
+            <input id="comCarencia" type="checkbox">Com carência?
+            <select id="listaSuspensa" hidden>
+                <option value="2">2 meses</option>
+                <option value="3">3 meses</option>
+               <option value="4">4 meses</option>
+            </select>
+        </form>
     </main>
     <br>
     <table>
